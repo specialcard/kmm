@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+/*layout*/
+.section--title{
+    width: 30%;
+    float: left;
+    display: flex;
+}
+.section--title h4{
+    font-size: 24px;
+    font-weight: 700;
+    color: #424242;
+    margin-bottom: 30px;
+}
+.section--title .border-box{
+    margin: 16px 20px 0px 20px; 
+    flex: 1;
+    height: 2px;
+    background: #424242;
+    display: none;
+}
+.section--cont{
+    width: 70%;
+    float: left;
+}
+
+/*point font*/
+span.pt{
+    font-weight: 700;
+    color: #171717;
+}
+/*section--login*/
+#section--login{}
+.section-login{
+    padding: 80px 0;
+}
+.section-login p.cont-info{
+    padding-bottom: 30px;
+    font-size: 16px;
+    color: #424242;
+    font-weight: 600;
+}
+
+.section-login .loginf{
+    padding: 30px;
+    width: 50%;
+    border: 1px solid #171717;
+}
+.section-login .loginf ul{
+    
+}
+.section-login .loginf ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.section-login .loginf ul li span{
+    width: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #171717;
+}
+.section-login .loginf ul li span.nameid{}
+.section-login .loginf ul li span.nameps{}
+
+.section-login .loginf ul li input{
+    height: 50px;
+    flex: 1;
+    padding: 0 5px;
+}
+.section-login .loginf .logbtn{
+    width: calc(100% - 70px);
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fafafa;
+    background-color: #424242;
+    border: 0;
+    cursor: pointer;
+    float: right;
+}
+.section-login .loginf .logbtn:hover{
+    background: #171717;
+}
+.section--cont .text-info{
+    width: 50%;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+}
+.section--cont .text-info span{
+    text-align: center;
+}
+.section--cont .text-info span:first-of-type{
+    margin-right: 2%;
+}
+
+.section--cont .text-info span a{
+    display: block;
+    border: 1px solid #171717;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+.section--cont .text-info span a .icon{
+    margin-left: 20px;
+}
+/*footer*/
+#footer{
+    overflow: hidden;
+    padding: 80px 0;
+    background: #faf8f8;
+    border-top: 1px solid #1d1d1f;
+}
+.f_left{float: left;}
+.f_left .f_address{padding-bottom: 20px;}
+.f_left .f_address p{font-size: 24px;}
+.f_left .f_nav{padding-bottom: 40px;}
+.f_left .f_nav ul{overflow: hidden;}
+.f_left .f_nav ul li{float: left; padding: 0 20px 0 0;}
+.f_left .f_nav ul li a{font-size: 14px;}
+.f_left .f_copy{}
+.f_left .f_copy p{font-size: 14px; color: #aaa;}
+.f_right{float: right;}
+.f_right .f_family{text-align: right;}
+.f_right .f_family select{padding: 0 5px; margin-top: 5px; outline: 0;}
+
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+    .section-login .loginf{
+        width: 70%;
+    }
+    .section--cont .text-info{
+        width: 70%;
+    }
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+    
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    .section-login .loginf{
+        width: 80%;
+    }
+    .section--cont .text-info{
+        width: 80%;
+    }
+    #footer{padding: 60px 0;}
+    .f_left .f_address p{font-size: 22px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    .f_right .f_family select{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    .section--title{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section--title h4{
+        margin-bottom: 0;
+    }
+    .section--title .border-box{
+        margin: 10px 0;
+        flex: auto;
+        width: 2px;
+        height: 20px;
+        background: #424242;
+    }
+    .section--cont{
+        width: 100%;
+    }
+    
+    .section--title .border-box{
+        display: block;
+    }
+    .section-login .loginf{
+        width: 100%;
+    }
+    .section--cont .text-info{
+        width: 100%;
+    }
+    .f_left .f_address p{font-size: 20px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    
+    span.var{
+        display: none;
+    }
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    
+    
+    #footer{padding: 40px 0;}
+    .f_right .f_family select{font-size: 12px;}
+    
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    .section-login .loginf{
+        padding: 15px;
+    }
+    .section-login .loginf ul li span{
+        width: 60px;
+        font-size: 14px;
+    }
+    .section-login .loginf .logbtn{
+        width: calc(100% - 60px);
+    }
+    .section--cont .text-info span a{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    .section--cont .text-info span a .icon{
+        text-align: center;
+        margin-left: 0;
+    }
+    .f_left .f_address p{font-size: 18px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

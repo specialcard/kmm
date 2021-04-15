@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+/*layout*/
+
+
+/*point font*/
+span.pt{
+    font-weight: 700;
+    color: #171717;
+}
+/*section--tab*/
+#section--tab{}
+.section--tab{
+    padding: 80px 0;
+}
+.search-form{
+    float: right;
+    padding: 20px 0;
+}
+.search-form [type="search"]{
+    margin-right: 10px;
+    border: 0;
+    border-bottom: 1px solid #171717;
+}
+.search-form [type="submit"]{
+    width: 20px;
+    height: 20px;
+    background: url('../img/search.png') no-repeat;
+    background-size: cover;
+}
+
+.tab-menu{
+    width: 100%;
+    float: right;
+}
+.tab-menu .tab-btn{}
+.tab-menu .tab-btn ul{
+    width: 100%;
+    border: 1px solid #171717;
+}
+.tab-menu .tab-btn ul li{
+    float: left;
+    width: 50%;
+    text-align: center;
+    border-right: 1px solid #171717;
+}
+.tab-menu .tab-btn ul li.active{
+    background: #171717;
+}
+.tab-menu .tab-btn ul li:last-of-type{
+    border-right: 0;
+}
+.tab-menu .tab-btn ul li a{
+    display: block;
+    padding: 20px 0;
+    color: #424242;
+}
+.tab-menu .tab-btn ul li.active a{
+    color: #fafafa;
+}
+.tab-menu .tab-cont{}
+.tab-menu .tab-cont div{
+    display: none;
+}
+.tab-menu .tab-cont div.show{
+    display: block;
+}
+.tab-menu .tab-cont .book{}
+.tab-menu .tab-cont .book ul{
+    border-bottom: 1px solid #ccc;
+}
+.tab-menu .tab-cont .book ul li{
+    float: left;
+    width: 13.333%;
+    margin: 1.5%;
+}
+
+.tab-menu .tab-cont .book ul li figcaption p{
+    font-size: 14px;
+    color: #424242;
+    margin-top: 30px;
+}
+
+
+.tab-menu .tab-cont .video{}
+.tab-menu .tab-cont .video ul{
+    width: 100%;
+    overflow: hidden;
+}
+.tab-menu .tab-cont .video ul:last-of-type{
+    border-bottom: 1px solid #ccc;
+}
+.tab-menu .tab-cont .video ul li{
+    float: left;
+    width: 16%;
+    margin: 2%;
+}
+.tab-menu .tab-cont .video ul li figure{}
+.tab-menu .tab-cont .video ul li figcaption{
+    text-align: center;
+}
+.tab-menu .tab-cont .video ul li figcaption em{
+    font-size: 14px;
+    font-weight: 400;
+    color: #424242;
+}
+.tab-menu .tab-cont .video ul li figcaption p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #424242;
+}
+/*footer*/
+#footer{
+    overflow: hidden;
+    padding: 80px 0;
+    background: #faf8f8;
+    border-top: 1px solid #1d1d1f;
+}
+.f_left{float: left;}
+.f_left .f_address{padding-bottom: 20px;}
+.f_left .f_address p{font-size: 24px;}
+.f_left .f_nav{padding-bottom: 40px;}
+.f_left .f_nav ul{overflow: hidden;}
+.f_left .f_nav ul li{float: left; padding: 0 20px 0 0;}
+.f_left .f_nav ul li a{font-size: 14px;}
+.f_left .f_copy{}
+.f_left .f_copy p{font-size: 14px; color: #aaa;}
+.f_right{float: right;}
+.f_right .f_family{text-align: right;}
+.f_right .f_family select{padding: 0 5px; margin-top: 5px; outline: 0;}
+
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+    
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    
+    #footer{padding: 60px 0;}
+    .f_left .f_address p{font-size: 22px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    .f_right .f_family select{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    .tab-menu .tab-cont .book ul li{
+        float: left;
+        width: 30%;
+        margin: 1.5%;
+    }
+    .tab-menu .tab-cont .video ul li{
+        float: left;
+        width: 21%;
+        margin: 2%;
+    }
+    .f_left .f_address p{font-size: 20px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    
+    span.var{
+        display: none;
+    }
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    .tab-menu .tab-cont .book ul li{
+        float: left;
+        width: 46%;
+        margin: 2%;
+    }
+    .tab-menu .tab-cont .video ul li{
+        float: left;
+        width: 30.333%;
+        margin: 1.5%;
+    }
+    #footer{padding: 40px 0;}
+    .f_right .f_family select{font-size: 12px;}
+    
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    
+    .f_left .f_address p{font-size: 18px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

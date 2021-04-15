@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub5_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* chart */
+#chart{
+    padding: 80px 0;
+}
+#chart .chart{
+    display: flex;
+}
+#chart .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#chart .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#chart .titArea h3::after{}
+#chart .txtArea{
+    width: 75.5%;
+    overflow: hidden;
+}
+#chart .txtArea .chartLeft{
+    width: 54%;
+    float: left;
+}
+#chart .txtArea .chartRight{
+    width: 16%;
+    float: right;
+}
+
+/* business */
+#business{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+#business .business{
+    display: flex;
+}
+#business .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#business .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#business .titArea h3::after{}
+#business .txtArea{
+    width: 75.5%;
+    background: #fff;
+}
+#business .txtArea>ul{}
+#business .txtArea>ul>li{
+    width: 100%;
+    display: table;
+    border-bottom: 1px solid #bdbdbd;
+}
+#business .txtArea>ul>li:last-child{
+    border: 0;
+}
+#business .txtArea>ul>li>p{
+    display: table-cell;
+    word-break: keep-all;
+}
+#business .txtArea>ul>li>.department_T{
+    width: 32%;
+    font-weight: 500;
+    text-align: center;
+}
+#business .txtArea>ul>li>.task_T{
+    width: 68%;
+    font-weight: 500;
+    text-align: center;
+}
+#business .txtArea>ul>li>.department{
+    width: 32%;
+    text-align: center;
+    padding: 20px 0;
+    border-right: 1px solid #bdbdbd;
+}
+#business .txtArea>ul>li>.task{
+    width: 68%;
+    padding: 20px;
+}
+#business .txtArea>ul>li>.taskList{
+    display: table-cell;
+    width: 68%;
+    padding: 20px;
+}
+#business .txtArea>ul>li>.taskList li{}
+#business .txtArea>ul>li>.taskList li p{
+    word-break: keep-all;
+}
+
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #chart{padding: 60px 0;}
+    #chart .titArea h3{font-size: 27px;}
+    #chart .txtArea .chartLeft{width: 60%;}
+    #chart .txtArea .chartRight{width: 18%;}
+    #business{padding: 60px 0;}
+    #business .titArea h3{font-size: 27px;}
+    #business .txtArea>ul>li>p{font-size: 14px;}
+    #business .txtArea>ul>li>.taskList li p{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #chart .chart{flex-direction: column;} 
+    #chart .titArea{width: 100%;} 
+    #chart .titArea h3{text-align: center;margin-bottom: 50px;} 
+    #chart .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;} 
+    #chart .txtArea{width: 100%;}
+    #chart .txtArea .chartLeft{width: 67%;}
+    #chart .txtArea .chartRight{width: 20%;}
+    #business .business{flex-direction: column;} 
+    #business .titArea{width: 100%;} 
+    #business .titArea h3{text-align: center;margin-bottom: 50px;} 
+    #business .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;} 
+    #business .txtArea{width: 100%;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #chart{padding: 40px 0;}
+    #chart .titArea h3{font-size: 24px;}
+    #chart .titArea h3::after{top: 45px;}
+    #business{padding: 40px 0;}
+    #business .titArea h3{font-size: 24px;}
+    #business .titArea h3::after{top: 45px;}
+    #business .txtArea>ul>li>p{font-size: 12px;}
+    #business .txtArea>ul>li>.taskList li p{font-size: 12px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #chart .titArea h3{font-size: 21px;}
+    #chart .titArea h3::after{top: 40px;}
+    #business .titArea h3{font-size: 21px;}
+    #business .titArea h3::after{top: 40px;}
+    #business .txtArea>ul>li>.task{padding: 20px 5px;}
+    #business .txtArea>ul>li>.taskList{padding: 20px 5px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

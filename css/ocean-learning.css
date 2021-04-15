@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+/*point font*/
+span.pt{
+    font-weight: 700;
+    color: #171717;
+}
+/*section--contBan*/
+#section--contBan{
+    background-color: #2ab7f8;
+}
+.section--contBan{
+    position: relative;
+    padding-top: 56.25%;
+}
+.section--contBan .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ocean_bg.png') no-repeat;
+    background-size: cover;
+}
+.section--contBan .ban-text{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section--contBan .object{
+    position: absolute;
+    animation: ob 8s ease-in-out infinite;
+}
+
+@keyframes ob{
+    0%{
+        transform: translateY(0%) rotate(0);
+    }
+    40%{
+        transform: translateY(-5%) rotate(-9deg);
+    }
+    80%{
+        transform: translateY(5%) rotate(9deg);
+    }
+    100%{
+        transform: translateY(0%) rotate(0);
+    }
+}
+.section--contBan .object1{
+    width: 15%;
+    top: 7%;
+    left: 10%;
+    animation-delay: 0.8s;
+}
+.section--contBan .object2{
+    width: 18%;
+    left: 3%;
+    top: 35%;
+}
+.section--contBan .object3{
+    width: 20%;
+    left: 3%;
+    bottom: 10%;
+    animation-delay: 0.5s;
+}
+.section--contBan .object4{
+    width: 18%;
+    top: 8%;
+    right: 10%;
+}
+.section--contBan .object5{
+    width: 18%;
+    right: 3%;
+    top: 35%;
+    animation-delay: 0.2s;
+}
+.section--contBan .object6{
+    width: 22%;
+    right: 0;
+    bottom: 10%;
+}
+.section--contBan .object7{
+    right: 40%;
+    bottom: 8%;
+    width: 10%;
+}
+/*section--contest*/
+#section--contest{
+    background: #f2f2f2;
+}
+.section--contest{
+    padding: 80px 0;
+}
+.section--contest .contest-more{
+    width: 100%;
+    padding-bottom: 80px;
+}
+.section--contest .contest-more li{
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    
+}
+.section--contest .contest-more li figure{
+    cursor: pointer;
+}
+.section--contest .contest-more li figcaption{
+    position: relative;
+    padding: 30px;
+    cursor: pointer;
+} 
+.section--contest .contest-more li figcaption em{
+    font-size: 20px;
+    font-weight: 500;
+    color: #424242;
+} 
+.section--contest .contest-more li figcaption p{
+    font-size: 14px;
+    color: #171717;
+    font-weight: 400;
+    padding-top: 30px;
+} 
+.section--contest .contest-more li figcaption b.arrow{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    color: #424242;
+}
+
+.section--contest .contest-more2{
+    width: 100%;
+}
+.section--contest .contest-more2 li{
+    float: left;
+    width: 29.333%;
+    margin: 0 2%;
+    background: #fafafa;
+    border: 1px solid #ccc;
+}
+.section--contest .contest-more2 li figure{}
+.section--contest .contest-more2 li figcaption{
+    padding: 30px;
+    display: flex;
+}
+.section--contest .contest-more2 li figcaption a{
+    display: inline-block;
+    flex: 1;
+    margin: 0 2%;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #171717;
+}
+.section--contest .contest-more2 li figcaption a:hover{
+    color: #fafafa;
+    background: #171717;
+}
+.section--contest .contest-more2 li figcaption a i{
+    font-style: normal;
+}
+.section--contest .contest-more2 li figcaption a i.look{}
+.section--contest .contest-more2 li figcaption a i.down{}
+
+/*footer*/
+#footer{
+    overflow: hidden;
+    padding: 80px 0;
+    background: #faf8f8;
+    border-top: 1px solid #1d1d1f;
+}
+.f_left{float: left;}
+.f_left .f_address{padding-bottom: 20px;}
+.f_left .f_address p{font-size: 24px;}
+.f_left .f_nav{padding-bottom: 40px;}
+.f_left .f_nav ul{overflow: hidden;}
+.f_left .f_nav ul li{float: left; padding: 0 20px 0 0;}
+.f_left .f_nav ul li a{font-size: 14px;}
+.f_left .f_copy{}
+.f_left .f_copy p{font-size: 14px; color: #aaa;}
+.f_right{float: right;}
+.f_right .f_family{text-align: right;}
+.f_right .f_family select{padding: 0 5px; margin-top: 5px; outline: 0;}
+
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+   
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    
+    
+    
+    #footer{padding: 60px 0;}
+    .f_left .f_address p{font-size: 22px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    .f_right .f_family select{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    
+    .section--contest .contest-more li{
+        width: 100%;
+        margin: 2% 0;
+    }
+    
+    .section--contest .contest-more2 li{
+        width: 100%;
+        margin: 2% 0;
+    }
+    
+    
+    .f_left .f_address p{font-size: 20px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    
+    
+    
+   #footer{padding: 40px 0;}
+    .f_right .f_family select{font-size: 12px;}
+    
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    
+    .f_left .f_address p{font-size: 18px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

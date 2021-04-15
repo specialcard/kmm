@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub5_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* vision */
+#vision{
+    padding: 80px 0;
+}
+#vision .vision{
+    display: flex;
+}
+#vision .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#vision .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#vision .txtArea{
+    width: 75.5%;
+}
+#vision .txtArea .visionBox{
+    margin-bottom: 40px;
+}
+#vision .txtArea .visionBox .vtext{
+    font-size: 24px;
+}
+#vision .txtArea .visionDesc ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+#vision .txtArea .visionDesc ul li{
+    width: 25%;
+}
+#vision .txtArea .visionDesc ul li figure{
+    
+}
+#vision .txtArea .visionDesc ul li figure img{
+    width: 50%;
+    margin: 0 auto;
+}
+#vision .txtArea .visionDesc ul li figure figcaption{
+    text-align: center;
+    margin-top: 30px;
+}
+#vision .txtArea .visionDesc ul li figure figcaption strong{}
+#vision .txtArea .visionDesc ul li figure figcaption p{}
+
+
+/* volunteer */
+#volunteer{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+#volunteer .volunteer{
+    display: flex;
+}
+#volunteer .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#volunteer .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#volunteer .txtArea{
+    width: 75.5%;
+}
+#volunteer .txtArea p{
+    word-break: keep-all;
+}
+
+/* promise */
+#promise{
+    padding: 80px 0;
+}
+#promise .promise{
+    display: flex;
+}
+#promise .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#promise .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#promise .txtArea{
+    width: 75.5%;
+}
+#promise .txtArea ul{}
+#promise .txtArea ul li:first-child{
+    margin-bottom: 30px;
+}
+#promise .txtArea ul li{
+    word-break: keep-all;
+}
+#promise .txtArea ul li strong{}
+#promise .txtArea ul li p{}
+
+/* program */
+#program{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+#program .program{
+    display: flex;
+}
+#program .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#program .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#program .txtArea{
+    width: 75.5%;
+}
+#program .txtArea ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#program .txtArea ul li{
+    width: 49%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+#program .txtArea ul li:nth-child(2n){
+    margin-right: 0;
+}
+#program .txtArea ul li figure{}
+#program .txtArea ul li figure img{}
+#program .txtArea ul li figure figcaption{}
+#program .txtArea ul li figure figcaption p{
+    font-weight: 500;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #vision{padding: 60px 0;}
+    #vision .titArea h3{font-size: 27px;}
+    #vision .txtArea .visionBox .vtext{font-size: 22px;}
+    #vision .txtArea .visionDesc ul li figure figcaption{font-size: 14px;}
+    #volunteer{padding: 60px 0;}
+    #volunteer .txtArea p{font-size: 14px;}
+    #volunteer .titArea h3{font-size: 27px;}
+    #promise{padding: 60px 0;}
+    #promise .txtArea ul li{font-size: 14px;}
+    #program{padding: 60px 0;}
+    #program .titArea h3{font-size: 27px;}
+    #program .txtArea ul li figure figcaption p{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #vision .vision{flex-direction: column;}
+    #vision .titArea{width: 100%;}
+    #vision .titArea h3{text-align:center; margin-bottom: 50px;}
+    #vision .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #vision .txtArea{width: 100%;text-align: center;}
+    #vision .txtArea .visionDesc ul li{width: 30%;}
+    #volunteer .volunteer{flex-direction: column;}
+    #volunteer .titArea{width: 100%;}
+    #volunteer .titArea h3{text-align: center;margin-bottom: 50px;}
+    #volunteer .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #volunteer .txtArea{width: 100%;text-align: center;}
+    #promise .promise{flex-direction: column;}
+    #promise .titArea{width: 100%;}
+    #promise .txtArea{width: 100%;text-align: center;}
+    #promise .titArea h3{text-align: center;margin-bottom: 50px;}
+    #promise .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #program .program{flex-direction: column;}
+    #program .titArea{width: 100%;}
+    #program .txtArea{width: 100%;text-align: center;}
+    #program .titArea h3{text-align: center;margin-bottom: 50px;}
+    #program .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #vision{padding: 40px 0;}
+    #vision .titArea h3{font-size: 24px;}
+    #vision .titArea h3::after{top: 45px;}
+    #vision .txtArea .visionBox{margin-bottom: 20px;}
+    #vision .txtArea .visionBox .vtext{font-size: 20px;}
+    #vision .txtArea .visionDesc ul li{width: 33.333%;}
+    #vision .txtArea .visionDesc ul li figure figcaption{font-size: 12px;margin-top: 15px;}
+    #volunteer{padding: 40px 0;}
+    #volunteer .titArea h3{font-size: 24px;}
+    #volunteer .titArea h3::after{top: 45px;}
+    #volunteer .txtArea p{font-size: 12px;}
+    #promise{padding: 40px 0;}
+    #promise .titArea h3{font-size: 24px;}
+    #promise .txtArea ul li{font-size: 12px;}
+    #promise .titArea h3::after{top: 45px;}
+    #program{padding: 40px 0;}
+    #program .titArea h3{font-size: 24px;}
+    #program .titArea h3::after{top: 80px;}
+    #program .txtArea ul li figure figcaption p{font-size: 12px;}
+
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #vision .txtArea .visionBox .vtext{font-size: 18px;}
+    #vision .titArea h3{font-size: 21px;}
+    #vision .titArea h3::after{top: 40px;}
+    #volunteer .titArea h3{font-size: 21px;}
+    #volunteer .titArea h3::after{top: 40px;}
+    #promise .titArea h3{font-size: 21px;}
+    #promise .titArea h3::after{top: 40px;}
+    #promise .txtArea ul li:first-child{margin-bottom: 20px;}
+    #program .titArea h3{font-size: 21px;}
+    #program .titArea h3::after{top: 70px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){
+    #vision .txtArea .visionDesc ul{flex-direction: column;}
+    #vision .txtArea .visionDesc ul li{width: 100%;margin-bottom: 20px;}
+    #vision .txtArea .visionDesc ul li:last-child{margin-bottom: 0px;}
+    #vision .txtArea .visionDesc ul li figure img{width: 30%;}
+}

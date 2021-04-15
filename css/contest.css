@@ -1,0 +1,295 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+/*point font*/
+span.pt{
+    font-weight: 700;
+    color: #171717;
+}
+/*section--contBan*/
+#section--contBan{
+    background-image: linear-gradient(45deg, #2f76df 0%,#2f75df 100%);
+}
+.section--contBan{
+    position: relative;
+    padding-top: 56.25%;
+}
+.section--contBan .bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/ban_bg.png') no-repeat;
+    background-size: cover;
+}
+.section--contBan .ban-text{
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.section--contBan .object{
+    position: absolute;
+    animation: ob 8s ease-in-out infinite;
+}
+
+@keyframes ob{
+    0%{
+        transform: translateY(0%);
+    }
+    40%{
+        transform: translateY(-5%);
+    }
+    80%{
+        transform: translateY(5%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+}
+.section--contBan .object1{
+    width: 15%;
+    top: 10%;
+    left: 5%;
+    animation-delay: 0.8s;
+}
+.section--contBan .object2{
+    width: 18%;
+    right: 3%;
+    bottom: 5%;
+}
+.section--contBan .object3{
+    width: 30%;
+    top: 10%;
+    right: 10%;
+    animation-delay: 0.5s;
+}
+.section--contBan .object4{
+    width: 18%;
+    top: 35%;
+    right: 0%;
+}
+.section--contBan .object5{
+    width: 18%;
+    left: 0%;
+    bottom: 10%;
+    animation-delay: 0.2s;
+}
+/*section--contest*/
+#section--contest{
+    background: #f2f2f2;
+}
+.section--contest{
+    padding: 80px 0;
+}
+.section--contest ul{
+    width: 100%;
+}
+.section--contest ul li{
+    float: left;
+    width: 46%;
+    margin: 0 2%;
+    background: #fafafa;
+    border: 1px solid #ccc;
+    
+}
+.section--contest ul li figure{
+    cursor: pointer;
+}
+.section--contest ul li figcaption{
+    position: relative;
+    padding: 30px;
+    cursor: pointer;
+} 
+.section--contest ul li figcaption em{
+    font-size: 20px;
+    font-weight: 500;
+    color: #424242;
+} 
+.section--contest ul li figcaption p{
+    font-size: 14px;
+    color: #171717;
+    font-weight: 400;
+    padding-top: 30px;
+} 
+.section--contest ul li figcaption b.arrow{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 20px;
+    color: #424242;
+}
+/*section--video*/
+#section--video{}
+.section--video{
+    padding-bottom: 80px;
+}
+.section--video .video-title{
+    height: 100px;
+    position: relative;
+}
+.section--video .video-title span.img{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 13%;
+    z-index: -1;
+}
+.section--video .video-title span.img img{
+    object-fit: cover;
+    width: 100%;
+}
+.section--video .video-title h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    font-size: 24px;
+    font-weight: 500;
+    color: #424242;
+    text-align: center;
+}
+
+.section--video .summary{}
+.section--video .summary ul{
+    width: 100%;
+}
+.section--video .summary ul li{
+    width: 100%;
+    margin: 30px 0;
+}
+.section--video .summary ul li figure{
+    display: flex;
+}
+.section--video .summary ul li figure img{
+    width: 35%;
+}
+.section--video .summary ul li figcaption{
+    width: 65%;
+    padding: 0 10px;
+}
+.section--video .summary ul li figcaption em{
+    font-size: 20px;
+    color: #171717;
+}
+.section--video .summary ul li figcaption p{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #424242;
+}
+/*footer*/
+#footer{
+    overflow: hidden;
+    padding: 80px 0;
+    background: #faf8f8;
+    border-top: 1px solid #1d1d1f;
+}
+.f_left{float: left;}
+.f_left .f_address{padding-bottom: 20px;}
+.f_left .f_address p{font-size: 24px;}
+.f_left .f_nav{padding-bottom: 40px;}
+.f_left .f_nav ul{overflow: hidden;}
+.f_left .f_nav ul li{float: left; padding: 0 20px 0 0;}
+.f_left .f_nav ul li a{font-size: 14px;}
+.f_left .f_copy{}
+.f_left .f_copy p{font-size: 14px; color: #aaa;}
+.f_right{float: right;}
+.f_right .f_family{text-align: right;}
+.f_right .f_family select{padding: 0 5px; margin-top: 5px; outline: 0;}
+
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+   
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    
+    
+    .section--video .video-title span.img{
+        width: 20%;
+        left: 10%;
+    }
+    .section--video .summary ul li figcaption p{
+        font-size: 14px;
+    }
+    #footer{padding: 60px 0;}
+    .f_left .f_address p{font-size: 22px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+    .f_right .f_family select{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    
+    .section--contest ul li{
+        width: 100%;
+        margin: 2% 0;
+    }
+    
+    .section--video .video-title span.img{
+        width: 25%;
+        left: 5%;
+    }
+    .section--video .video-title h5{
+        font-size: 18px;
+    }
+    .section--video .summary ul li figure{
+        display: block;
+    }
+    .section--video .summary ul li figure img{
+        width: 100%;
+    }
+    .section--video .summary ul li figcaption{
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .f_left .f_address p{font-size: 20px;}
+    .f_left .f_nav ul li a{font-size: 12px;}
+    .f_left .f_copy p{font-size: 12px;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    
+    .section--video .video-title span.img{
+        width: 30%;
+        left: 0%;
+    }
+    
+   #footer{padding: 40px 0;}
+    .f_right .f_family select{font-size: 12px;}
+    
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    .section--video .video-title span.img{
+        width: 35%;
+        left: 0%;
+    }
+    .f_left .f_address p{font-size: 18px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

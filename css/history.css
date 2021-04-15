@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub5_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* history */
+#history{
+    padding: 80px 0;
+}
+#history .history{
+    display: flex;
+}
+#history .imgArea{
+    width: 32%;
+    margin-right: 8%;
+}
+#history .imgArea img{}
+#history .imgArea img:first-child{
+    margin-bottom: 40px;
+}
+#history .txtArea{
+    width: 60%;
+}
+#history .txtArea .summary{}
+#history .txtArea .summary h3{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#history .txtArea .summary ul{}
+#history .txtArea .summary ul li{
+    width: 100%;
+    display: table;
+    margin-bottom: 15px;
+}
+#history .txtArea .summary ul li:last-child{
+    margin-bottom: 0;
+}
+#history .txtArea .summary ul li p{
+    display: table-cell;
+    word-break: keep-all;
+}
+#history .txtArea .summary ul li .tit{
+    width: 14%;
+    margin-right: 2%;
+    font-weight: 500;
+}
+#history .txtArea .summary ul li .txt{
+    width: 84%;
+}
+#history .txtArea .historyBox{
+    margin-top: 150px;
+}
+#history .txtArea .historyBox>ul{}
+#history .txtArea .historyBox>ul>li{
+    display: table;
+    width: 100%;
+    
+}
+#history .txtArea .historyBox ul li{
+    margin-bottom: 15px;
+}
+#history .txtArea .historyBox ul li .year{
+    display: table-cell;
+    width: 16%;
+    font-size: 24px;
+}
+#history .txtArea .historyBox ul li .month{
+    display: table-cell;
+    width: 16%;
+}
+#history .txtArea .historyBox ul li .month li{}
+#history .txtArea .historyBox ul li .month li p{
+    position: relative;
+    text-align: center;
+    word-break: keep-all;
+}
+#history .txtArea .historyBox ul li .month li p::after{
+    position: absolute;
+    content: "";
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #bdbdbd;
+}
+#history .txtArea .historyBox ul li .desc{
+    display: table-cell;
+    width: 68%;
+}
+#history .txtArea .historyBox ul li .desc li{}
+#history .txtArea .historyBox ul li .desc li p{}
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}  
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+    #history .txtArea .historyBox{margin-top: 100px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #history{padding: 60px 0;}
+    #history .txtArea .summary h3{font-size: 22px;}
+    #history .txtArea .summary ul li p{font-size: 14px;}
+    #history .txtArea .historyBox ul li .year{font-size: 22px;}
+    #history .txtArea .historyBox ul li .month li p{font-size: 14px;}
+    #history .txtArea .historyBox ul li .month li p::after{width: 26px;height: 26px;top: -4px;}
+    #history .txtArea .historyBox ul li .desc li p{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #history .history{flex-direction: column;}
+    #history .imgArea{width: 100%;margin-right: 0;}
+    #history .imgArea img:last-child{display: none;}
+    #history .txtArea{width: 100%;}
+    #history .txtArea .historyBox{margin-top: 50px;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #history{padding: 40px 0;}
+    #history .txtArea .summary h3{font-size: 20px;}
+    #history .txtArea .summary ul li p{font-size: 12px;}
+    #history .txtArea .historyBox ul li .year{font-size: 20px;}
+    #history .txtArea .historyBox ul li .month li p{font-size: 12px;}
+    #history .txtArea .historyBox ul li .month li p::after{width: 22px;height: 22px;top: -3px;}
+    #history .txtArea .historyBox ul li .desc li p{font-size: 12px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #history .txtArea .summary h3{font-size: 18px;}
+    #history .txtArea .summary ul li .tit{width: 18%;}
+    #history .txtArea .summary ul li .txt{width: 80%;}
+    #history .txtArea .historyBox ul li .year{font-size: 18px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

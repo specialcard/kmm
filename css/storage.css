@@ -1,0 +1,148 @@
+@charset="UTF-8";
+
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub4_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#storage{
+    padding: 80px 0;
+}
+#storage .storage{
+    display: flex;
+}
+#storage .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#storage .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#storage .titArea h3::after{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    top: 50%;
+    right: 0;
+    background: #1d1d1f;
+    display: none;
+}
+#storage .contBox{
+    width: 75.5%;
+}
+#storage .Toptxt{padding-bottom: 60px;}
+#storage .Toptxt span{font-size: 22px; margin-bottom: 20px; display: inline-block;}
+#storage .Toptxt p{
+    word-break: keep-all;
+}
+#storage .chartBox01{padding: 60px 0;}
+#storage .chartBox01 h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#storage .chart01{width: 100%; border: 1px solid #ccc; border-collapse: collapse; border-spacing: 0;}
+#storage .chart01 thead{}
+#storage .chart01 thead tr{}
+#storage .chart01 thead tr th{border: 1px solid #ccc; border-top: 1px solid #000; padding: 8px 15px;}
+#storage .chart01 tbody{}
+#storage .chart01 tbody tr{}
+#storage .chart01 tbody tr td{border: 1px solid #ccc; text-align: center; padding: 8px 15px;}
+#storage .chart01 tbody tr td.txt_left{text-align: left; padding-left: 10px; box-sizing: border-box;}
+#storage .chart01 tfoot{}
+#storage .chart01 tfoot tr{}
+#storage .chart01 tfoot tr td{border: 1px solid #ccc; text-align: center; font-weight: 600;}
+#storage .chart01 tfoot tr td.txt_left{text-align: left; padding-left: 10px; padding: 8px 15px;}
+
+#storage .storage_img{padding: 60px 0;}
+#storage .storage_img h4{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#storage .storage_img img{
+    width: 80%;
+}
+
+#storage .chartBox02{padding: 60px 0;}
+#storage .chart02{width: 100%; border: 1px solid #ccc; border-collapse: collapse; border-spacing: 0;}
+#storage .chart02 thead{}
+#storage .chart02 thead tr{}
+#storage .chart02 thead tr th{border: 1px solid #ccc; border-top: 1px solid #000; padding: 8px 15px;}
+#storage .chart02 tbody{}
+#storage .chart02 tbody tr{}
+#storage .chart02 tbody tr td{border: 1px solid #ccc; padding: 8px 15px; text-align: center;}
+
+
+
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+    #storage .titArea h3::after{width: 35%;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+    #storage .titArea h3::after{width: 30%;} 
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #storage{padding: 60px 0;}
+    #storage .titArea h3{font-size: 27px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #storage .storage{flex-direction: column;}
+    #storage .titArea{width: 100%;}
+    #storage .titArea h3{text-align: center;margin-bottom: 50px;}
+    #storage .titArea h3::after{width: 1px;height: 20px;top: 50px;left: 50%; display: block;}
+    #storage .contBox{width: 100%;}
+    
+    #storage .Toptxt{text-align: center;}
+    #storage .storage_img .imgBox{display: flex; justify-content: center;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #storage{padding: 40px 0;}
+    #storage .titArea h3{font-size: 24px;}
+    #storage .titArea h3::after{top: 45px;}
+    #storage .Toptxt span{font-size: 18px; }
+    #storage .Toptxt p{font-size: 14px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #storage .titArea h3{font-size: 21px;}
+    #storage .titArea h3::after{top: 40px;}
+    #storage .chart01 thead tr th{font-size: 13px; padding: 8px 5px;}
+    #storage .chart01 tbody{font-size: 11px;}
+    #storage .chart01 tfoot tr td{font-size: 13px;}
+    #storage .chartBox02{padding: 20px 0;}
+    #storage .chart02 thead tr th{font-size: 13px; padding: 8px 5px;}
+    #storage .chart02 tbody tr td{font-size: 12px; padding: 8px 5px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}
+
+
+
+
+

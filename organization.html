@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>국립해양박물관</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--인터넷익스플로어 최선버전으로 렌더링 해주세요-->
+     <!-- http://ogp.me/ -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="icon/favicon_152">
+    <meta property="og:url" content="">
+    <!-- https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started.html -->
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:site" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="icon/favicon_152">
+    <meta property="twitter:url" content="">
+    <!--style-->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/sub.css" type="text/css">
+    <link rel="stylesheet" href="css/oranization.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="icon/favicon_152.png">
+    <link rel="apple-touch-icon-precomposed" href="icon/favicon_152.png">
+    <link rel="icon" href="icon/favicon_16.png" sizes="16x16">
+    <link rel="icon" href="icon/favicon_32.png" sizes="32x32">
+    <link rel="icon" href="icon/favicon_72.png" sizes="72x72">
+    <link rel="icon" href="icon/favicon_144.png" sizes="144x144">
+    <!-- script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script defer src="js/nav_script.js"></script>
+    <script defer src="js/sub.js"></script>
+</head>
+<body>
+   <header id="header">
+        <div id="nav_top">
+            <div class="container">
+                <div class="row">
+                    <div class="nav_top clearfix">
+                        <div class="logo">
+                            <h1><a href="index.html"><img src="img/nav_logo.png" alt="메인로고"><span class="ir_pm">국립해양박물관</span></a></h1>
+                        </div>
+                        <!--//logo-->
+                        <div class="member clearfix">
+                            <ul class="clearfix">
+                                <li><a href="login.html">로그인</a></li>
+                                <li><a href="group.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                        <!--//member-->
+                    </div>
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//nav_top-->
+        <div id="total">
+            <div class="container">
+                <div class="row">
+                    <div class="total_button">
+                        <div class="t_button">
+                            <span></span>
+                        </div>
+                        <div class="t_button2">
+                            <span></span>
+                        </div>
+                    </div>
+                    <!--//total_button-->
+                    <div class="total_manu">
+                        <div class="total_close"><span></span></div>
+                        <img src="img/total_nav_logo.png" alt="로고">
+                        <ul>
+                            <li><a href="viewing.html">관람정보</a>
+                                <ul class="total_submanu">
+                                    <li><a href="viewing.html">관람안내</a></li>
+                                    <li><a href="location.html">오시는길</a>
+                                        <ul class="total_sub">
+                                            <li><a href="location.html">오시는길</a></li>
+                                            <li><a href="parking.html">주차안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="schedule.html">박물관 일정</a></li>
+                                    <li><a href="facility.html">시설안내</a>
+                                        <ul class="total_sub">
+                                            <li><a href="facility.html">전체안내</a></li>
+                                            <li><a href="floorguide.html">층별안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faqs.html">자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="now_upcoming.html">전시</a>
+                                <ul class="total_submanu">
+                                    <li><a href="now_upcoming.html">기획전시</a>
+                                        <ul class="total_sub">
+                                            <li><a href="now_upcoming.html">현재전시</a></li>
+                                            <li><a href="past.html">지난전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="floor.html">상설전시</a>
+                                        <ul class="total_sub">
+                                            <li><a href="floor.html">층별전시안내</a></li>
+                                            <li><a href="3-floor.html">3층안내</a></li>
+                                            <li><a href="4-floor.html">4층안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="outdoor.html">야외전시</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="present.html">교육·문화</a>
+                                <ul class="total_submanu">
+                                    <li><a href="present.html">교육</a>
+                                        <ul class="total_sub">
+                                            <li><a href="present.html">현재교육</a></li>
+                                            <li><a href="past.html">지난교육</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="kids.html">어린이박물관</a></li>
+                                    <li><a href="edupds.html">교육자료/영상</a></li>
+                                    <li><a href="contest.html">해양교육문화박람회</a>
+                                        <ul class="total_sub">
+                                            <li><a href="contest.html">어린이 그리고 우리의 바다</a></li>
+                                            <li><a href="ocean-learning.html">온라인 바다 배움관</a></li>
+                                            <li><a href="expo.html">내가 만드는 해양교육문화 박람회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="event.html">이벤트</a>
+                                        <ul class="total_sub">
+                                            <li><a href="event.html">현재이벤트</a></li>
+                                            <li><a href="prevevent.html">지난이벤트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="oceanbook.html">오션북페어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="recent.html">소장품</a>
+                                <ul class="total_submanu">
+                                    <li><a href="recent.html">소장품 검색</a>
+                                        <ul class="total_sub">
+                                            <li><a href="recent.html">주요 소장자료</a></li>
+                                            <li><a href="search.html">소장자료 검색</a></li>
+                                            <li><a href="cultural.html">지정문화재</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="story.html">소장자료 이야기</a></li>
+                                    <li><a href="storage.html">소장자료 관리</a>
+                                        <ul class="total_sub">
+                                            <li><a href="storage.html">수장고 현황</a></li>
+                                            <li><a href="conservation.html">보존관학동 현황</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="introduce.html">KNMM</a>
+                                <ul class="total_submanu">
+                                    <li><a href="introduce.html">인사말</a></li>
+                                    <li><a href="organization.html">조직 및 업무</a></li>
+                                    <li><a href="ci.html">KNMM소개</a>
+                                        <ul class="total_sub">
+                                            <li><a href="ci.html">박물관 C.I</a></li>
+                                            <li><a href="facilityintro.html">시설소개</a></li>
+                                            <li><a href="history.html">연혁 및 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="notice.html">알림</a>
+                                        <ul class="total_sub">
+                                            <li><a href="notice.html">공지사항</a></li>
+                                            <li><a href="social.html">사회공헌</a></li>
+                                            <li><a href="gallery.html">포토갤러리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="qnas.html">1:1문의</a></li>
+                                    <li><a href="volunteer.html">자원봉사안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="link_box">
+                            <h2>이용약관</h2>
+                            <ul>
+                                <li><a href="terms.html">이용약관</a></li>
+                                <li><a href="privacy.html">개인정보처리방침</a></li>
+                                <li><a href="movie.html">영상정보처리기기 운영·관리방침</a></li>
+                                <li><a href="email.html">이메일무단수집거부</a></li>
+                                <li><a href="copyright.html">저작권정책</a></li>
+                            </ul>
+                        </div>
+                        <div class="info_box">
+                            <ul>
+                                <li><a href="login.html">로그인</a></li>
+                                <li class="last"><a href="group.html">회원가입</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--//total_manu-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//total-->
+        <nav id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="manu">
+                        <ul class="clearfix">
+                            <li>
+                                <a href="viewing.html">관람정보</a>
+                                <ul class="submanu">
+                                    <li><a href="viewing.html">관람안내</a></li>
+                                    <li class="arrow"><a href="location.html">오시는길</a>
+                                        <ul class="sub">
+                                            <li><a href="location.html">오시는길</a></li>
+                                            <li><a href="parking.html">주차안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="schedule.html">박물관 일정</a></li>
+                                    <li class="arrow"><a href="facility.html">시설안내</a>
+                                        <ul class="sub">
+                                            <li><a href="facility.html">전체안내</a></li>
+                                            <li><a href="floorguide.html">층별안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faqs.html">자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="now_upcoming.html">전시</a>
+                                <ul class="submanu">
+                                    <li class="arrow">
+                                        <a href="now_upcoming.html">기획전시</a>
+                                        <ul class="sub">
+                                            <li><a href="now_upcoming.html">현재전시</a></li>
+                                            <li><a href="past.html">지난전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="floor.html">상설전시</a>
+                                        <ul class="sub">
+                                            <li><a href="floor.html">층별전시안내</a></li>
+                                            <li><a href="3-floor.html">3층안내</a></li>
+                                            <li><a href="4-floor.html">4층안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="outdoor.html">야외전시</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="present.html">교육·문화</a>
+                                <ul class="submanu">
+                                    <li class="arrow"><a href="present.html">교육</a>
+                                        <ul class="sub">
+                                            <li><a href="present.html">현재교육</a></li>
+                                            <li><a href="past.html">지난교육</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="kids.html">어린이박물관</a></li>
+                                    <li><a href="edupds.html">교육자료/영상</a></li>
+                                    <li class="arrow"><a href="contest.html">해양교육문화박람회</a>
+                                        <ul class="sub">
+                                            <li><a href="contest.html">어린이 그리고 우리의 바다</a></li>
+                                            <li><a href="ocean-learning.html">온라인 바다 배움관</a></li>
+                                            <li><a href="expo.html">내가 만드는 해양교육문화 박람회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="event.html">이벤트</a>
+                                        <ul class="sub">
+                                            <li><a href="event.html">현재이벤트</a></li>
+                                            <li><a href="prevevent.html">지난이벤트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="oceanbook.html">오션북페어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="recent.html">소장품</a>
+                                <ul class="submanu">
+                                    <li class="arrow"><a href="recent.html">소장품 검색</a>
+                                        <ul class="sub">
+                                            <li><a href="recent.html">주요 소장자료</a></li>
+                                            <li><a href="search.html">소장자료 검색</a></li>
+                                            <li><a href="cultural.html">지정문화재</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="story.html">소장자료 이야기</a></li>
+                                    <li class="arrow"><a href="storage.html">소장자료 관리</a>
+                                        <ul class="sub">
+                                            <li><a href="storage.html">수장고 현황</a></li>
+                                            <li><a href="conservation.html">보존관학동 현황</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="introduce.html">KNMM</a>
+                                <ul class="submanu">
+                                    <li><a href="introduce.html">인사말</a></li>
+                                    <li><a href="organization.html">조직 및 업무</a></li>
+                                    <li class="arrow"><a href="history.html">KNMM소개</a>
+                                        <ul class="sub">
+                                            <li><a href="ci.html">박물관 C.I</a></li>
+                                            <li><a href="facilityintro.html">시설소개</a></li>
+                                            <li><a href="history.html">연혁 및 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="notice.html">알림</a>
+                                        <ul class="sub">
+                                            <li><a href="notice.html">공지사항</a></li>
+                                            <li><a href="social.html">사회공헌</a></li>
+                                            <li><a href="gallery.html">포토갤러리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="qnas.html">1:1문의</a></li>
+                                    <li><a href="volunteer.html">자원봉사안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="m_member clearfix">
+                            <li><a href="login.html">로그인</a><i class="fa fa-share-square-o" aria-hidden="true"></i></li>
+                            <li><a href="group.html">회원가입</a><i class="fa fa-share-square-o" aria-hidden="true"></i></li>
+                        </div>
+                    </div>
+                    <!--//manu-->
+                    <div class="manu_info">
+                        <ul>
+                            <li><strong>관람시간</strong></li>
+                            <li class="day"><span>화요일 - 일요일</span></li>
+                            <li class="time"><span>09:00 - 17:00</span></li>
+                            <li class="holiday"><span>휴관 매주월요일</span></li>
+                        </ul>
+                    </div>
+                    <div class="mo_manu">
+                        <div class="mo_close">
+                            <div class="mo_button">
+                                <span></span>
+                            </div>
+                        </div>
+                        <!--//mo_close-->
+                        <ul class="clearfix m_depth01">
+                            <li>
+                                <a href="viewing.html" class="alink">관람정보</a>
+                                <ul class="mo_submanu">
+                                    <li><a href="viewing.html">관람안내</a></li>
+                                    <li class="arrow"><a href="location.html" class="alink">오시는길</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="location.html">오시는길</a></li>
+                                            <li><a href="parking.html">주차안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="schedule.html">박물관 일정</a></li>
+                                    <li class="arrow"><a href="facility.html" class="alink">시설안내</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="facility.html">전체안내</a></li>
+                                            <li><a href="floorguide.html">층별안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="faqs.html">자주하는 질문</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="now_upcoming.html" class="alink">전시</a>
+                                <ul class="mo_submanu">
+                                    <li class="arrow">
+                                        <a href="now_upcoming.html" class="alink">기획전시</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="now_upcoming.html">현재전시</a></li>
+                                            <li><a href="past.html">지난전시</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="floor.html" class="alink">상설전시</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="floor.html">층별전시안내</a></li>
+                                            <li><a href="3-floor.html">3층안내</a></li>
+                                            <li><a href="4-floor.html">4층안내</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="outdoor.html">야외전시</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="present.html" class="alink">교육·문화</a>
+                                <ul class="mo_submanu">
+                                    <li class="arrow"><a href="present.html" class="alink">교육</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="present.html">현재교육</a></li>
+                                            <li><a href="past.html">지난교육</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="kids.html">어린이박물관</a></li>
+                                    <li><a href="edupds.html">교육자료/영상</a></li>
+                                    <li class="arrow"><a href="contest.html" class="alink">해양교육문화박람회</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="contest.html">어린이 그리고 우리의 바다</a></li>
+                                            <li><a href="ocean-learning.html">온라인 바다 배움관</a></li>
+                                            <li><a href="expo.html">내가 만드는 해양교육문화 박람회</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="event.html" class="alink">이벤트</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="event.html">현재이벤트</a></li>
+                                            <li><a href="prevevent.html">지난이벤트</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="oceanbook.html">오션북페어</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="recent.html" class="alink">소장품</a>
+                                <ul class="mo_submanu">
+                                    <li class="arrow"><a href="recent.html" class="alink">소장품 검색</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="recent.html">주요 소장자료</a></li>
+                                            <li><a href="search.html">소장자료 검색</a></li>
+                                            <li><a href="cultural.html">지정문화재</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="story.html">소장자료 이야기</a></li>
+                                    <li class="arrow"><a href="storage.html" class="alink">소장자료 관리</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="storage.html">수장고 현황</a></li>
+                                            <li><a href="conservation.html">보존관학동 현황</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="introduce.html" class="alink">KNMM</a>
+                                <ul class="mo_submanu">
+                                    <li><a href="introduce.html">인사말</a></li>
+                                    <li><a href="organization.html">조직 및 업무</a></li>
+                                    <li class="arrow"><a href="history.html" class="alink">KNMM소개</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="ci.html">박물관 C.I</a></li>
+                                            <li><a href="facilityintro.html">시설소개</a></li>
+                                            <li><a href="history.html">연혁 및 현황</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="arrow"><a href="notice.html" class="alink">알림</a>
+                                        <ul class="mo_sub">
+                                            <li><a href="notice.html">공지사항</a></li>
+                                            <li><a href="social.html">사회공헌</a></li>
+                                            <li><a href="gallery.html">포토갤러리</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="qnas.html">1:1문의</a></li>
+                                    <li><a href="volunteer.html">자원봉사안내</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="m_member clearfix">
+                            <li><a href="login.html">로그인</a><i class="fa fa-share-square-o" aria-hidden="true"></i></li>
+                            <li><a href="group.html">회원가입</a><i class="fa fa-share-square-o" aria-hidden="true"></i></li>
+                        </div>
+                    </div>
+                    <!--//manu-->
+                </div>
+                <!--//row-->
+            </div>
+            <!--//container-->
+            <div class="subback"></div>
+            <!--//subback-->
+        </nav>
+        <!--//nav-->
+    </header>
+    <!--//header-->
+    <section id="banner">
+        <div class="container">
+            <div class="row">
+                <div class="banner">
+                    <h2>KNMM</h2>
+                    <p>국립해양박물관의 문은 언제나 바다로<br>활짝 열려있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//#banner-->
+    <section id="section--sub-nav">
+        <div class="container">
+            <div class="row">
+                <div class="sub-nav">
+                    <div class="home-btn">
+                        <a href="index.html">HOME</a>
+                    </div>
+                    <nav class="nav">
+                        <ul>
+                            <li><a href="introduce.html">인사말</a></li>
+                            <li class="active"><a href="organization.html">조직및업무</a></li>
+                            <li><a href="ci.html">KNMM소개</a>
+                                <ul class="sub-menu">
+                                    <li><a href="ci.html">박물관CI</a></li>
+                                    <li><a href="facilityintro.html">시설소개</a></li>
+                                    <li><a href="history.html">연혁및현황</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="notice.html">알림</a>
+                                <ul class="sub-menu">
+                                    <li><a href="notice.html">공지사항</a></li>
+                                    <li><a href="social.html">사회공헌</a></li>
+                                    <li><a href="gallery.html">포토갤러리</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="qnas.html">1:1문의</a></li>
+                            <li><a href="volunteer.html">자원봉사안내</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--//section--sub-nav-->
+    <section id="section--contents">
+        <div class="container">
+            <div class="row">
+                <div class="subTitle">
+                    <h3>조직 및 업무</h3>
+                    <p>국립해양박물관을 위해 언제나 최선을 다하고 있습니다.</p>
+                </div>
+            </div>
+        </div>  
+    </section>
+    <!--//section--contents-->
+    <section id="chart">
+        <div class="container">
+            <div class="row">
+                <div class="chart">
+                    <div class="titArea">
+                        <h3>조직</h3>
+                    </div>
+                    <!--//titArea-->
+                    <div class="txtArea">
+                        <div class="chartLeft">
+                            <img src="img/sub5_organi01.png" alt="운영본부">
+                        </div>
+                        <div class="chartRight">
+                            <img src="img/sub5_organi02.png" alt="운영사">
+                        </div>
+                    </div>
+                    <!--//txtArea-->
+                </div>
+                <!--//.chart-->
+            </div>
+        </div>
+    </section>
+    <!--//#chart-->
+    <section id="business">
+        <div class="container">
+            <div class="row">
+                <div class="business">
+                    <div class="titArea">
+                        <h3>업무</h3>
+                    </div>
+                    <!--//titArea-->
+                    <div class="txtArea">
+                        <ul>
+                            <li>
+                                <p class="department department_T">부서</p>
+                                <p class="task task_T">담당업무</p>
+                            </li>
+                            <li>
+                                <p class="department">관장실</p>
+                                <p class="task">국립해양박물관 업무 총괄</p>
+                            </li>
+                            <li>
+                                <p class="department">운영본부</p>
+                                <p class="task">운영본부 업무 총괄</p>
+                            </li>
+                            <li>
+                                <p class="department">기획조정실</p>
+                                <p class="task">기획조정실 업무 총괄</p>
+                            </li>
+                            <li>
+                                <p class="department">학예연구실</p>
+                                <p class="task">학예연구실 업무 총괄</p>
+                            </li>
+                            <li>
+                                <p class="department">해양교육문화센터</p>
+                                <p class="task">해양교육문화센터 업무총괄</p>
+                            </li>
+                            <li>
+                                <p class="department">감사팀</p>
+                                <p class="task">감사 담당</p>
+                            </li>
+                            <li>
+                                <p class="department">박물관현안대응T/F</p>
+                                <ul class="taskList">
+                                    <li>
+                                        <p>&middot; 해양 VR 실증전시관 구성·운영 관련 업무</p>
+                                        <p>&middot; 해양클러스터 협의회 관련 업무</p>
+                                        <p>&middot; 자원봉사가족 운영 관리 업무 등</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="department">기획예산팀</p>
+                                <ul class="taskList">
+                                    <li>
+                                        <p>&middot; 기획예산팀 업무 총괄</p>
+                                        <p>&middot; 중장기 경영목표 및 발전계획 수립&middot;조정</p>
+                                        <p>&middot; 평가업무 총괄</p>
+                                        <p>&middot; 대정부, 국정감사 및 국회업무 총괄</p>
+                                        <p>&middot; 대관업무(주요 업무보고 등)</p>
+                                        <p>&middot; 기록관장, 정보공개책임관</p>
+                                        <p>&middot; 민원업무 총괄(홈페이지 민원 제외)</p>
+                                        <p>&middot; 직인관리</p>
+                                        <p>&middot; 이사회(임원추천위원회 포함) 운영</p>
+                                        <p>&middot; 인력 및 조직 관리(조직개편, 업무분장 조정 등)</p>
+                                        <p>&middot; 내규 제·개정 및 폐지 등 내규 관리</p>
+                                        <p>&middot; 법률자문, 소송, 등기 관련 업무 총괄</p>
+                                        <p>&middot; 각종 위원회 관리 총괄</p>
+                                        <p>&middot; 사회공헌활동</p>
+                                        <p>&middot; 평가업무(경영평가, 부서평가, 운영평가, 박물관 평가인증)</p>
+                                        <p>&middot; 공공기관 경영공시(알리오, 알리오플러스)</p>
+                                        <p>&middot; 박물관 기록물 관리 및 정보공개 운영</p>
+                                        <p>&middot; 국가보안 및 비밀취급 업무</p>
+                                        <p>&middot; 민원관련 업무(홈페이지 민원 제외)</p>
+                                        <p>&middot; 박물관 제도개선 관련 업무</p>
+                                        <p>&middot; 시민참여단 운영</p>
+                                        <p>&middot; 평가업무(경영평가, 부서평가, 운영평가, 박물관 평가인증)</p>
+                                        <p>&middot; 공공기관 경영공시(알리오, 알리오플러스)</p>
+                                        <p>&middot; 박물관 기록물 관리 및 정보공개 운영</p>
+                                        <p>&middot; 국가보안 및 비밀취급 업무</p>
+                                        <p>&middot; 민원관련 업무(홈페이지 민원 제외)</p>
+                                        <p>&middot; 박물관 제도개선 관련 업무</p>
+                                        <p>&middot; 시민참여단 운영</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="department">인재개발팀</p>
+                                <ul class="taskList">
+                                    <li>
+                                        <p>&middot; 인재개발팀 업무 총괄</p>
+                                        <p>&middot; 성희롱&middot;성폭력고충상담원</p>
+                                        <p>&middot; 고충처리 업무</p>
+                                        <p>&middot; 직원채용 및 인사발령에 관한 사항</p>
+                                        <p>&middot; 성과평가 관리</p>
+                                        <p>&middot; 인사 관련 규정 관리 및 취업규칙 신고</p>
+                                        <p>&middot; 인사위원회 구성 및 운영</p>
+                                        <p>&middot; 연봉산정 및 급여업무</p>
+                                        <p>&middot; 직원 복무 관리(파견, 휴직, 복직, 출장, 휴가, 연차 등)</p>
+                                        <p>&middot; 직원 교육훈련 및 역량개발에 관한 업무</p>
+                                        <p>&middot; 직원복리후생 제도 운영</p>
+                                        <p>&middot; 고충처리위원회 운영 관리</p>
+                                        <p>&middot; 휴일근무 및 유연근무 관리</p>
+                                        <p>&middot; 직장협의회 운영</p>
+                                        <p>&middot; 팀 서무업무</p>
+                                        <p>&middot; 부속실 업무</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <p class="department">재무관리팀</p>
+                                <ul class="taskList">
+                                    <li>
+                                        <p>&middot; 재무관리팀 업무 총괄</p>
+                                        <p>&middot; 자금운용계획 수립 및 조정</p>
+                                        <p>&middot; (재무)경영평가 및 (부서)내부평가 관리</p>
+                                        <p>&middot; 버스차량 관리</p>
+                                        <p>&middot; 재무업무 효율성 제고</p>
+                                        <p>&middot; 공사, 용역 등 각종 입찰 및 계약</p>
+                                        <p>&middot; 물품구매 및 물품관리(재물조사 등)</p>
+                                        <p>&middot; 공공기관 우선구매제도 목표 및 실적 관리(중소기업,기술개발,여성·장애인기업, 중증장애인생산품,사회적기업 협동조합, 녹색제품)</p>
+                                        <p>&middot; 기본재산 등 자산의 취득&middot;관리&middot;처분</p>
+                                        <p>&middot; 국유재산의 관리위탁 (결산보고서 작성)</p>
+                                        <p>&middot; 관사계약 및 관리</p>
+                                        <p>&middot; (국가)계약법 변경에 따른 규정개정 및 부서교육</p>
+                                        <p>&middot; 수입업무 검토 등 (수입결의서 작성)</p>
+                                        <p>&middot; 세무관련 업무 (국세·지방세 등 신고, 납부)</p>
+                                        <p>&middot; 지급명세서 작성 및 관리</p>
+                                        <p>&middot; 일반분개전표 작성, 마감 및 관리</p>
+                                        <p>&middot; 계정과목 생성 및 연결 관리</p>
+                                        <p>&middot; 자금수지일계표 작성 및 관리</p>
+                                        <p>&middot; 일반계약 결의서 검토 및 출납</p>
+                                        <p>&middot; 합계잔액시산표, 재무상태표, 손익계산서 작성</p>
+                                        <p>&middot; 회계결산 및 회계감사 수감(중간/기말 감사 수감)</p>
+                                        <p>&middot; 법인명의 계좌 개설 및 관리</p>
+                                        <p>&middot; 회계 및 세무 정보시스템 환경설정 및 기능개선</p>
+                                        <p>&middot; 공용차량 운영 및 관리</p>
+                                        <p>&middot; 업무용(교육지원, 행사지원) 대형버스 운행</p>
+                                        <p>&middot; 공용차량(버스 2대, 관용차량 3대) 유지 및 관리</p>
+                                        <p>&middot; 법인카드 검토, 지급 등 관리</p>
+                                        <p>&middot; 여비 정산, 검토 지급 등 관리</p>
+                                        <p>&middot; 현금 및 유가증권 관리</p>
+                                        <p>&middot; 연말정산 산정, 납부 및 관리</p>
+                                        <p>&middot; 원인행위액과 지출결의액 차이 조정 및 관리</p>
+                                        <p>&middot; 퇴직연금 적립액 분기별 산정&middot;납입&middot;관리</p>
+                                        <p>&middot; 부가가치세 관련 업무(신고&middot;납부)</p>
+                                        <p>&middot; 재무관리팀 서무 및 기타 업무</p>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--//txtArea-->
+                </div>
+                <!--//.business-->
+            </div>
+        </div>
+    </section>
+    <!--//#business-->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <article class="f_left">
+                    <div class="f_address">
+                        <p>부산 영도구 해양로301번길 45</p>
+                    </div>
+                    <div class="f_nav">
+                        <ul>
+                            <li><a href="location.html">오시는길</a></li>
+                            <li><a href="terms.html">이용약관</a></li>
+                            <li><a href="privacy.html">개인정보처리방침</a></li>
+                            <li><a href="movie.html">영상정보처리기기 운영·관리방침</a></li>
+                            <li><a href="email.html">이메일무단수집거부</a></li>
+                            <li><a href="copyright.html">저작권정책</a></li>
+                        </ul>
+                    </div>
+                    <div class="f_copy">
+                        <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</p>
+                        <p>본 저작물은 '국립해양박물관'에서 이용하였습니다.</p>
+                    </div>
+                </article>
+                <article class="f_right">
+                    <div class="f_family">
+                        <select id="family" onchange="if(this.value) window.open(this.value);">
+                            <option value="">패밀리사이트
+                            <option value="https://www.naver.com/">네이버
+                            <option value="https://www.google.co.kr/">구글
+                            <option value="https://www.daum.net/"> 다음
+                        </select>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </footer>
+    <!--//footer-->
+</body>
+</html>

@@ -1,0 +1,140 @@
+@charset="UTF-8";
+
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/group_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+#group{
+    padding: 80px 0;
+}
+#group .group{
+    display: flex;
+}
+#group .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#group .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#group .titArea h3::after{
+    content: "";
+    position: absolute;
+    width: 45%;
+    height: 3px;
+    top: 50%;
+    right: 0;
+    background: #1d1d1f;
+    display: none;
+}
+#group .contBox_wrap{
+    width: 75.5%;
+}
+#group .contBox{
+    float: left; 
+    border: 1px solid #1d1d1f; 
+    width: 45%;
+    padding: 1%;
+    margin-right: 10%;
+}
+#group .contBox02{margin-right: 0;}
+#group .contBox figure{margin: 50px 0 20px 0;}
+#group .contBox .img_box{
+    display: flex; 
+    justify-content: center;
+}
+#group .contBox .img_box img{width: 20%;}
+#group .contBox figure figcaption{
+    margin-top: 40px;
+}
+#group .contBox .tit{
+    display: block;
+    font-weight: 700;
+    text-align: center;
+    font-size: 18px;
+}
+#group .contBox .txt{
+    text-align: center;
+    display: block;
+}
+#group .contBox .link_box{
+    background: #1d1d1f;
+    padding: 15px;
+}
+#group .contBox .link_box a{
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+
+
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+    #group .titArea h3::after{width: 35%;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+    #group .titArea h3::after{width: 30%;} 
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #group{padding: 60px 0;}
+    #group .titArea h3{font-size: 27px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #group .group{flex-direction: column;}
+    #group .titArea{width: 100%;}
+    #group .titArea h3{text-align: center;margin-bottom: 50px;}
+    #group .titArea h3::after{width: 1px;height: 20px;top: 50px;left: 50%; display: block;}
+    #group .contBox_wrap{width: 100%;}
+    #group .contBox{
+    width: 48%;
+    margin-right: 4%;}
+    #group .contBox02{margin-right: 0;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #group{padding: 40px 0;}
+    #group .titArea h3{font-size: 24px;}
+    #group .titArea h3::after{top: 45px;}
+    #group .contBox figure{margin: 30px 0 20px 0;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #group .titArea h3{font-size: 21px;}
+    #group .titArea h3::after{top: 40px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){
+    #group .contBox figure{margin: 20px 0 20px 0;}
+}
+
+
+
+
+

@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+
+
+/* terms */
+#privacy{
+    padding: 80px 0;
+}
+#privacy .privacy{
+    display: flex;
+}
+#privacy .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#privacy .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#privacy .titArea h3::after{}
+#privacy .txtArea{
+    width: 75.5%;
+}
+#privacy .txtArea h4{
+    font-size: 18px;
+    font-weight: 700;
+    margin: 60px 0 20px 0;
+}
+#privacy .txtArea h4:first-child{
+    margin-top: 0;
+}
+#privacy .txtArea p{
+    word-break: keep-all;
+    line-height: 1.7;
+}
+#privacy .txtArea ul{
+    margin-top: 20px;
+    border: 1px solid #bdbdbd;
+}
+#privacy .txtArea ul li{
+    display: table;
+    width: 100%;
+    border-bottom: 1px solid #bdbdbd;
+}
+#privacy .txtArea ul li:last-child{
+    border-bottom: 0;
+}
+#privacy .txtArea ul li p{
+    display: table-cell;
+    text-align: center;
+    padding: 20px;
+    border-right: 1px solid #bdbdbd;
+}
+#privacy .txtArea ul li p:last-child{
+    border-right: 0;
+}
+#privacy .txtArea ul li p.bold{
+    font-weight: 500;
+}
+#privacy .txtArea .dot{
+    border: 0;
+}
+#privacy .txtArea .dot li{
+    position: relative;
+    display: block;
+    border: 0;
+}
+#privacy .txtArea .dot li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: #1d1d1f;
+}
+#privacy .txtArea .dot li p{
+    border: 0;
+    text-align: left;
+    padding: 0 0 0 10px;
+}
+#privacy .txtArea .line{
+    margin-top: 0;
+    padding-left: 10px;
+    border: 0;
+}
+#privacy .txtArea .line li{
+    position: relative;
+    display: block;
+    border: 0;
+}
+#privacy .txtArea .line li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 13px;
+    width: 5px;
+    height: 1px;
+    background: #1d1d1f;
+}
+#privacy .txtArea .line li p{
+    padding-left: 10px;
+}
+#privacy .txtArea .item{}
+#privacy .txtArea .item li{}
+#privacy .txtArea .item li .item01{
+    width: 10%;
+}
+#privacy .txtArea .item li .item02{
+    width: 30%;
+}
+#privacy .txtArea .item li .item03{
+    width: 30%;
+}
+#privacy .txtArea .item li .item04{
+    width: 30%;
+}
+#privacy .txtArea .term{}
+#privacy .txtArea .term li{}
+#privacy .txtArea .term li .term01{
+    width: 10%;
+}
+#privacy .txtArea .term li .term02{
+    width: 35%;
+}
+#privacy .txtArea .term li .term03{
+    width: 35%;
+}
+#privacy .txtArea .term li .term04{
+    width: 20%;
+}
+#privacy .txtArea .consign{}
+#privacy .txtArea .consign li{}
+#privacy .txtArea .consign li .consign01{
+    width: 40%;
+}
+#privacy .txtArea .consign li .consign02{
+    width: 40%;
+}
+#privacy .txtArea .consign li .consign03{
+    width: 20%;
+}
+#privacy .txtArea .num{
+    border: 0;
+    margin-top: 0;
+}
+#privacy .txtArea .num li{}
+#privacy .txtArea .num li::after{
+    width: 0;
+}
+#privacy .txtArea .num li p{}
+#privacy .txtArea .demand{}
+#privacy .txtArea .demand li{}
+#privacy .txtArea .demand li .demand01{
+    width: 60%;
+}
+#privacy .txtArea .demand li .demand02{
+    width: 40%;
+}
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;} 
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #privacy{padding: 60px 0;}
+    #privacy .titArea h3{font-size: 27px;}
+    #privacy .txtArea h4{font-size: 16px;margin: 40px 0 20px 0;}
+    #privacy .txtArea p{font-size: 14px;}
+    #privacy .txtArea ul li p{font-size: 14px;padding: 15px;}
+    #privacy .txtArea .dot li::after{top: 10px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #privacy .privacy{flex-direction: column;}
+    #privacy .titArea{width: 100%;margin-right: 0;}
+    #privacy .privacy h3{text-align:center; margin-bottom: 50px;}
+    #privacy .privacy h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 50px;left: 50%;background: #1d1d1f;}
+    #privacy .txtArea{width: 100%;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #privacy{padding: 40px 0;}
+    #privacy .titArea h3{font-size: 24px;}
+    #privacy .titArea h3::after{top: 45px;}
+    #privacy .txtArea h4{font-size: 14px;margin: 20px 0;}
+    #privacy .txtArea p{font-size: 12px;}
+    #privacy .txtArea ul{margin-top: 10px;}
+    #privacy .txtArea ul li p{font-size: 12px;padding: 10px;}
+    #privacy .txtArea .dot li::after{top: 9px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #privacy .titArea h3{font-size: 21px;}
+    #privacy .titArea h3::after{top: 40px;}
+    #privacy .txtArea h4{font-size: 13px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

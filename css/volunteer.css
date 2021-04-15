@@ -1,0 +1,241 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub5_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* contents */
+#contents{
+    padding: 80px 0;
+}
+#contents .contents{
+    display: flex;
+}
+#contents .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#contents .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#contents .txtArea{
+    width: 75.5%;
+}
+#contents .txtArea .imgBox{
+    display: flex;
+    margin-bottom: 30px;
+}
+#contents .txtArea .imgBox img{
+    width: 33.33%;
+}
+
+/* qualification */
+#qualification{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+#qualification .qualification{
+    display: flex;
+}
+#qualification .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#qualification .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#qualification .txtArea{
+    width: 75.5%;
+}
+#qualification .txtArea ul li{
+    display: table;
+    width: 100%;
+    padding: 15px 0px;
+    border-bottom: 1px solid #bdbdbd;
+}
+#qualification .txtArea ul li:first-child{
+    border-top: 1px solid #1d1d1f;
+}
+#qualification .txtArea>ul>li>p{
+    display: table-cell;
+    text-align: center;
+    word-break: keep-all;
+}
+#qualification .txtArea ul li .titc{
+    font-weight: 500;
+}
+#qualification .txtArea ul li .titc01{
+    width: 23%;
+}
+#qualification .txtArea ul li .titc02{
+    width: 77%;
+}
+#qualification .txtArea ul li .tc{
+    width: 23%;
+    display: table-cell;
+}
+#qualification .txtArea ul li .txt02{
+    width: 77%;
+    display: table-cell;
+}
+#qualification .txtArea ul li .txt02 li{
+    padding: 0;
+    border: 0;
+}
+#qualification .txtArea ul li .txt02 li p{
+    word-break: keep-all;
+}
+
+/* support */
+#support{
+    padding: 80px 0;
+}
+#support .support{
+    display: flex;
+}
+#support .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#support .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#support .txtArea{
+    width: 75.5%;
+}
+#support .txtArea p{
+    word-break: keep-all;
+}
+
+/* etc */
+#etc{
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+#etc .etc{
+    display: flex;
+}
+#etc .titArea{
+    width: 23.5%;
+    margin-right: 1%;
+}
+#etc .titArea h3{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+#etc .txtArea{
+    width: 75.5%;
+}
+#etc .txtArea p{word-break: keep-all;}
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;}
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #section--contents .subTitle{height: 250px;}
+    #section--contents .subTitle h3{font-size: 27px;}
+    #section--contents .subTitle p{font-size: 18px;}
+    #contents{padding: 60px 0;}
+    #contents .titArea h3{font-size: 27px;}
+    #contents .txtArea .textBox ul li{font-size: 14px;}
+    #qualification{padding: 60px 0;}
+    #qualification .titArea h3{font-size: 27px;}
+    #qualification .txtArea ul li p{font-size: 14px;}
+    #support{padding: 60px 0;}
+    #support .titArea h3{font-size: 27px;}
+    #support .txtArea p{font-size: 14px;}
+    #etc{padding: 60px 0;}
+    #etc .titArea h3{font-size: 27px;}
+    #etc .txtArea p{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #contents .contents{flex-direction: column;}
+    #contents .titArea{width: 100%;}
+    #contents .titArea h3{text-align: center;margin-bottom: 50px;}
+    #contents .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #contents .txtArea{width: 100%;}
+    #contents .txtArea .imgBox img{width: 50%;}
+    #contents .txtArea .imgBox img:last-child{display: none;}
+    #qualification .qualification{flex-direction: column;}
+    #qualification .titArea{width: 100%;}
+    #qualification .titArea h3{text-align: center;margin-bottom: 50px;}
+    #qualification .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #qualification .txtArea{width: 100%;}
+    #support .support{flex-direction: column;}
+    #support .titArea{width: 100%;}
+    #support .titArea h3{text-align: center;margin-bottom: 50px;}
+    #support .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #support .txtArea{width: 100%;}
+    #etc .etc{flex-direction: column;}
+    #etc .titArea{width: 100%;}
+    #etc .titArea h3{text-align: center;margin-bottom: 50px;}
+    #etc .titArea h3::after{content: "";position: absolute;width: 1px;height: 20px;top: 90px;left: 50%;background: #1d1d1f;}
+    #etc .txtArea{width: 100%;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #section--contents .subTitle{height: 200px;}
+    #section--contents .subTitle h3{font-size: 24px;}
+    #section--contents .subTitle p{font-size: 16px;}
+    #contents{padding: 40px 0;}
+    #contents .titArea h3{font-size: 24px;}
+    #contents .titArea h3::after{top: 45px;}
+    #contents .txtArea .textBox ul li{font-size: 12px;}
+    #qualification{padding: 40px 0;}
+    #qualification .titArea h3{font-size: 24px;}
+    #qualification .titArea h3::after{top: 80px;}
+    #qualification .txtArea ul li p{font-size: 12px;}
+    #support{padding: 40px 0;}
+    #support .titArea h3{font-size: 24px;}
+    #support .titArea h3::after{top: 45px;}
+    #support .txtArea p{font-size: 12px;}
+    #etc{padding: 40px 0;}
+    #etc .titArea h3{font-size: 24px;}
+    #etc .titArea h3::after{top: 45px;}
+    #etc .txtArea p{font-size: 12px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #contents .titArea h3{font-size: 21px;}
+    #contents .titArea h3::after{top: 40px;}
+    #qualification .titArea h3{font-size: 21px;}
+    #qualification .titArea h3::after{top: 70px;}
+    #support .titArea h3::after{top: 40px;}
+    #etc .titArea h3::after{top: 40px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('select[name=emailSel]').change(function(){
+        if($(this).val=="1"){
+            $("#ymail2").val("");
+        }else{
+            $("#ymail2").val($(this).val());
+            $("#ymail2").attr("readonly",true);
+        }
+    });
+});

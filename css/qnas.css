@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+.container{width: 1440px;height: inherit;margin: 0 auto;}
+.row{padding: 0 24px;}
+
+/* banner */
+#banner{
+    width: 100%;
+    height: 400px;
+    background: url(../img/sub5_banner.jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* qna */
+#qna{
+    padding: 80px 0;
+}
+#qna .qna{}
+#qna .write{
+    margin-bottom: 40px;
+}
+#qna .write ul{}
+#qna .write ul li{
+    display: table;
+    width: 100%;
+    padding: 20px 0;
+}
+#qna .write ul li .left{
+    display: table-cell;
+    width: 15%;
+    vertical-align: middle;
+}
+#qna .write ul li .left .tit{    
+    font-size: 20px;
+    font-weight: 500;
+}
+#qna .write ul li .right{
+    display: table-cell;
+    width: 85%;
+    vertical-align: middle;
+    padding-left: 15px;
+}
+#qna .write ul li .right .input_text{
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    padding: 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+    font-size: 15px;
+}
+#qna .write ul li .right .input_text::placeholder{
+    font-size: 15px;
+    color: #717071;
+    line-height: 45px;
+}
+#qna .write ul li .right .yname{}
+#qna .write ul li .right .ymail1{}
+#qna .write ul li .right span{padding: 0 5px;}
+#qna .write ul li .right .ymail2{}
+#qna .write ul li .right .yphone{}
+#qna .write ul li .right .sub{
+    width: 100%;
+    min-height: 720px;
+}
+#qna .write ul li .right select{
+    height: 45px;
+    padding: 0 15px;
+    border: 1px solid #bdbdbd;
+    outline: none;
+    vertical-align: top;
+}
+#qna .agree{
+    margin-bottom: 40px;
+    padding: 40px;
+    background: #f2f2f2;
+}
+#qna .agree .textBox{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #bdbdbd;
+}
+#qna .agree .textBox p{
+    word-break: keep-all;
+}
+#qna .agree .textBox .tit{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#qna .agree .checkbox{}
+#qna .agree .checkbox .check{
+    vertical-align: middle;
+}
+#qna .agree .checkbox label{
+    vertical-align: middle;
+}
+#qna .btnArea{
+    float: right;
+}
+#qna .btnArea a{
+    display: inline-block;
+    padding: 15px 40px;
+    border: 1px solid #bdbdbd;
+    transition: background 0.3s ease;
+}
+#qna .btnArea a:hover{
+    background: #59a0a0;
+}
+#qna .btnArea .btn_insert{
+    margin-right: 10px;
+}
+#qna .btnArea .btn_cancel{}
+
+/* media query */
+/* 0 ~ 1450 */
+@media(max-width:1450px){
+    .container{width: 100%;}
+}
+/* 0 ~ 1280 */
+@media(max-width:1280px){
+    .row{padding: 0 28px;} 
+}
+
+/* 0 ~ 1024 */
+@media(max-width:1024px){
+    .row{padding: 0 20px;}
+}
+
+/* 0 ~ 960 */
+@media(max-width:960px){
+    .row{padding: 0 10px;}
+    #qna{padding: 60px 0;}
+    #qna .write ul li .left .tit{font-size: 18px;}
+    #qna .write ul li .right .input_text{font-size: 13px;}
+    #qna .write ul li .right .input_text::placeholder{font-size: 13px;}
+    #qna .write ul li .right select{font-size: 14px;}
+    #qna .agree .textBox .tit{font-size: 18px;}
+    #qna .agree .textBox p{font-size: 14px;}
+    #qna .agree .checkbox label{font-size: 14px;}
+    #qna .btnArea a{font-size: 14px;}
+}
+
+/* 0 ~ 768 */
+@media(max-width:768px){
+    .row{padding: 0 24px;}
+    #qna .write{margin-bottom: 20px;}
+    #qna .write ul li{padding: 10px 0;}
+    #qna .write ul li .right .ymail1{width: 89%;margin-bottom: 10px;}
+    #qna .write ul li .right span{}
+    #qna .write ul li .right .ymail2{width: 100%;margin-bottom: 10px;}
+    #qna .write ul li .right .ymailsel{width: 100%;}
+    #qna .agree{padding: 20px;margin-bottom: 20px;}
+    #qna .agree .textBox{margin-bottom: 15px;padding-bottom: 15px;}
+    #qna .agree .textBox .tit{margin-bottom: 15px;}
+}
+
+/* 0 ~ 600 */
+@media(max-width:600px){
+    #qna{padding: 40px 0;}
+    #qna .write ul li .left .tit{font-size: 16px;}
+    #qna .write ul li .right .input_text{font-size: 11px;}
+    #qna .write ul li .right .input_text::placeholder{font-size: 11px;}
+    #qna .write ul li .right select{font-size: 12px;}
+    #qna .agree .textBox .tit{font-size: 16px;}
+    #qna .agree .textBox p{font-size: 12px;}
+    #qna .agree .checkbox label{font-size: 12px;}
+    #qna .btnArea a{font-size: 12px;}
+}
+
+/* 0 ~ 480 */
+@media(max-width:480px){
+    .row{padding: 0 16px;}
+    #qna .write ul li .left .tit{font-size: 14px;}
+    #qna .write ul li .right .ymail1{width: 85%;}
+    #qna .agree .textBox .tit{font-size: 14px;}
+}
+
+/* 0 ~ 360 */
+@media(max-width:360px){}
